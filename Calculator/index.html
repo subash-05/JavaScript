@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="content">
+            <input id="textbox" placeholder="input goes here...">
+            <br>
+            <button class="button" onclick="assign('1')">1</button>
+            <button class="button" onclick="assign('2')">2</button>
+            <button class="button" onclick="assign('3')">3</button>
+            <br>
+            <button class="button" onclick="assign('4')">4</button>
+            <button class="button" onclick="assign('5')">5</button>
+            <button class="button" onclick="assign('6')">6</button>
+            <br>
+            <button class="button" onclick="assign('7')">7</button>
+            <button class="button" onclick="assign('8')">8</button>
+            <button class="button" onclick="assign('9')">9</button>
+            <br>
+            <button class="button" onclick="assign('0')">0</button>
+            <button class="button" onclick="assign('+')">+</button>
+            <button class="button" onclick="assign('-')">-</button>
+            <br>
+            <button class="button" onclick="assign('*')">*</button>
+            <button class="button" onclick="assign('/')">/</button>
+            <button class="button" onclick="calc()">=</button>
+            <br>
+            <button class="button" id="clr" onclick="reset()">C</button>
+            <br>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+body
+{
+    padding: 10px;
+}
+
+.content
+{
+    margin: 0 auto;
+    padding: 2rem;
+    width: 16%;
+    height: fit-content;
+    background-color:rgb(180, 220, 255);
+}
+
+#clr
+{
+    width: 12rem;
+}
+
+.button, #textbox
+{
+    padding: 1rem;
+    margin: 1rem;
+}
+
