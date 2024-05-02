@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Library Book Form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+
+    <body>
+        <div class="form">
+            <h2>Add New Book</h2>
+        
+            <div class="inputs">
+                <label>Category</label>
+                <select id="select">
+                    <option value="IT">IT</option>
+                    <option value="History">History</option>
+                    <option value="Mathematics">Mathematics</option>
+                </select><br>
+
+                <label>Book</label>
+                <input type="text" placeholder="Enter the book name" id="bookInput" onkeyup="BookChecker()">
+                <label id="bookMessage">  Valid</label><br>
+
+                <label>Author Email</label>
+                <input type="text" id="emailInput" placeholder="Enter your email" onkeyup="EmailChecker()">
+                <label id="mailMessage">  Valid</label><br>
+
+                <label>Author Name</label>
+                <input type="text" id="nameInput" placeholder="Enter author name" onkeyup="NameChecker()">
+                <label id="authorMessage">  Valid</label><br>
+
+                <label>Published</label>
+                <input type="number" id="yearInput" placeholder="Enter the year of publication" onkeyup="YearChecker()">
+                <label id="yearMessage">  Valid</label><br>
+
+                <label>Price</label>
+                <input type="number" id="priceInput" placeholder="Enter the price" onkeyup="PriceChecker()">
+                <label id="priceMessage">  Valid</label><br>
+
+                <button class="button" onclick="AddToTable()">Submit</button>
+                <button class="button" onclick="">Cancel</button><br>
+            </div>
+        </div>
+
+        <h4>Copyright 2024 - present Syncfusion</h4>
+
+        <div class="display">
+            <h2>Book Details</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Category</th>
+                    <td>IT</td>
+                </tr>
+                <tr>
+                    <th>Book</th>
+                    <td id="book"></td>
+                </tr>
+                <tr>
+                    <th>Author Email</th>
+                    <td id="email"></td>
+                </tr>
+                <tr>
+                    <th>Author</th>
+                    <td id="name"></td>
+                </tr>
+                <tr>
+                    <th>Published</th>
+                    <td id="year"></td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td id="price"></td>
+                </tr>
+            </table>
+        </div>
+
+        
+    </body>
+</html>

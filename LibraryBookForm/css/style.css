@@ -1,0 +1,23 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inputs input
+{
+    margin: 1rem;
+    padding: .5rem;
+    width: 20%;
+}
+
+.table th, td
+{
+    text-align: left;
+    width: 12rem;
+}
+
+#bookMessage, #mailMessage, #authorMessage, #yearMessage, #priceMessage
+{
+    color: rgb(0, 199, 90);
+    visibility: hidden;
+}

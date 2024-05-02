@@ -1,12 +1,82 @@
 <html>
     <head>
         <title>User form</title>
-        <script type="stylesheet" src="style.css"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
 
     <body>
         <form>
-            <label>Name</label><input type="text" id=""
+            <label>Name: </label><input id="username" type="text" placeholder="FirstName" ><br><br>
+
+            <label>Email: </label><input id="mail" type="text" placeholder="Email" ><label id="messg" style="visibility: hidden;">Valid</label><br><br>
+
+            <label>Phone Number: </label><input id="phone" type="number" placeholder="10-digit number" ><br><br>
+            <label>Password </label><input type="password" placeholder="password" id="pass"><br>
+
+            <label>Gender </label><br>
+            <input id="m" type="radio" name="gender" value="male"><label for="m">Male</label><br>
+            <input id="f" type="radio" name="gender" value="female"><label for="f">Female</label><br>
+            <input id="not" type="radio" name="gender" value="not disclosed"><label for="not">Not Wish to Disclose</label><br>
+
+            <label>Languages</label><br>
+            <input id="tamil" type="checkbox" value="Tamil"><label for="tamil">Tamil</label><br>
+            <input id="eng" type="checkbox" value="English"><label for="eng">English</label><br>
+            <input id="french" type="checkbox" value="French"><label for=french>French</label><br>
+            <input id="malay" type="checkbox" value="Malay"><label for="malay">Malay</label> <br>
+
+            <label>Select your field of Interest: </label><br>
+            <select id="select">
+                <option value="Music">Music</option>
+                <option value="Cycling">Cycling</option>
+                <option value="Badminton">Badminton</option>
+                <option value="Cricket">Cricket</option>
+            </select><br><br>
+
+            <input type="button" value="Submit" onclick="Calling()">
         </form>
+        <br>
+        <div class="table">
+            <table border="1" width="50%">
+                <tr>
+                    <th>SECTION</th>
+                    <th>USER DETAILS</th>
+                </tr>
+    
+                <tr>
+                    <th>USERNAME</th>
+                    <td id="nameInput"></td>
+                </tr>
+    
+                <tr>
+                    <th>EMAIL</th>
+                    <td id="mailInput"></td>
+                </tr>
+    
+                <tr>
+                    <th>PHONE NUMBER</th>
+                    <td id="phoneInput"></td>
+                </tr>
+
+                <tr>
+                    <th>PASSWORD</th>
+                    <td id="passInput"></td>
+                </tr>
+
+                <tr>
+                    <th>GENDER</th>
+                    <td id="genderInput"></td>
+                </tr>
+                
+                <tr>
+                    <th>LANGUAGES</th>
+                    <td id="langInput"></td>
+                </tr>
+
+                <tr>
+                    <th>HOBBIE</th>
+                    <td id="hobbieInput"></td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
